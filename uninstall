@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+
+if [ "$(id -u)" != "0" ]
+then
+	echo "Sorry, you are not root."
+	exit 1
+fi
+
+
+GIT_CLONE_WRAPPER="gclone"
+
+APP_PATH="/opt/gclone"
+BIN_PATH="/usr/local/bin"
+
+echo -e "Uninstalling.."
+
+
+rm "${BIN_PATH}/${GIT_CLONE_WRAPPER}"
+
+rm "${APP_PATH}/${GIT_CLONE_WRAPPER}"
+rmdir "${APP_PATH}"
