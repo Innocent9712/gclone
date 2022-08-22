@@ -4,7 +4,7 @@
 
 ### How to install
 
-- Open the `gclone.sh` file and add your github Personal Access Token (PAT) part of the code.
+- Open the `gclone.sh` file and add your github Personal Access Token (PAT) and Username part of the code.
 
 switch
 ```bash
